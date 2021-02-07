@@ -96,7 +96,6 @@ class _BrowseState extends State<BrowsePage> {
         appBar: setupAppBar(),
         body: Column(
           children: <Widget>[
-            SizedBox(height: 1),
             Expanded(child: setNewWebView(),)
           ],
         ),

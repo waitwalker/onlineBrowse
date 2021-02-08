@@ -17,7 +17,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomeState extends State<HomePage> {
-
   double width = 0.0;
   double height = 0.0;
 
@@ -90,7 +89,7 @@ class _HomeState extends State<HomePage> {
               ),
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context){
-                  return BrowsePage(initialUrl: "https://www.etiantian.com", title: "网校",);
+                  return BrowsePage(initialUrl: "https://www.etiantian.com/", title: "网校满分课程",);
                 }));
               },
             ),
@@ -130,7 +129,7 @@ class _HomeState extends State<HomePage> {
               ),
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context){
-                  return BrowsePage(initialUrl: "https://ai.etiantian.com", title: "网校",);
+                  return BrowsePage(initialUrl: "https://ai.etiantian.com/", title: "网校智领课程",);
                 }));
               },
             ),
@@ -170,7 +169,7 @@ class _HomeState extends State<HomePage> {
               ),
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context){
-                  return BrowsePage(initialUrl: "https://school-web.etiantian.com", title: "网校",);
+                  return BrowsePage(initialUrl: "https://school-web.etiantian.com/", title: "数字校园",);
                 }));
               },
             ),

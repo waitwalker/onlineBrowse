@@ -132,14 +132,13 @@ class _BrowseState extends State<BrowsePage> {
       var action3 = InkWell(
         child: Container(
           alignment: Alignment.center,
-          padding: EdgeInsets.symmetric(horizontal: 10),
+          padding: EdgeInsets.symmetric(horizontal: 25),
           child: Icon(
-            Icons.refresh,
-            size: 30.0,
+            Icons.rotate_90_degrees_ccw_outlined,
+            size: 32.0,
           ),
         ),
         onTap: () {
-
           currentOrientationLandscape = ! currentOrientationLandscape;
           if (currentOrientationLandscape) {
             SystemChrome.setPreferredOrientations([
@@ -162,7 +161,59 @@ class _BrowseState extends State<BrowsePage> {
       actions.add(action3);
     }
     return AppBar(
-      title: Text(widget.title),
+      title: Container(
+        height: 44,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Padding(padding: EdgeInsets.only(left: 35)),
+            InkWell(
+              child: Icon(Icons.arrow_back, size: 30,),
+              onTap: () async {
+                bool canGoBack = await flutterWebviewPlugin.canGoBack();
+                if (canGoBack) {
+                  await flutterWebviewPlugin.goBack();
+                }
+              },
+            ),
+            Padding(padding: EdgeInsets.only(left: 25)),
+            InkWell(
+              child: Icon(Icons.arrow_forward, size: 30,),
+              onTap: () async {
+                bool canForward = await flutterWebviewPlugin.canGoForward();
+                if (canForward) {
+                  await flutterWebviewPlugin.canGoForward();
+                }
+              },
+            ),
+            Padding(padding: EdgeInsets.only(left: 25)),
+            InkWell(
+              child: Icon(Icons.refresh, size: 30,),
+              onTap: (){
+                flutterWebviewPlugin.reload();
+              },
+            ),
+            Padding(padding: EdgeInsets.only(left: 50)),
+            Text(widget.title + " " + widget.initialUrl, style: TextStyle(fontSize: 15),),
+          ],
+        ),
+      ),
+      leading: Padding(padding: EdgeInsets.only(left: 20),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            InkWell(
+              child: Icon(Icons.close, size: 28,),
+              onTap: (){
+                SystemChrome.setPreferredOrientations([
+                  DeviceOrientation.landscapeLeft
+                ]);
+                Navigator.pop(context);
+              },
+            ),
+          ],
+        ),
+      ),
       elevation: 1,
       //backgroundColor: Colors.white,
       centerTitle: true,

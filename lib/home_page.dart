@@ -59,8 +59,8 @@ class _HomeState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    width: 190,
-                    height: 240,
+                    width: 230,
+                    height: 290,
                     decoration: BoxDecoration(
                       color: Color(0xff39A7FF),
                       borderRadius: BorderRadius.circular(10),
@@ -75,16 +75,16 @@ class _HomeState extends State<HomePage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Image.asset("images/full_mark_card_course_icon.png", width: 127, height: 127, fit: BoxFit.fill,),
+                        Image.asset("images/full_mark_card_course_icon.png", width: 160, height: 160, fit: BoxFit.fill,),
                         Padding(padding: EdgeInsets.only(top: 20)),
-                        Text("www.etiantian.com", style: TextStyle(fontSize: 10, color: Color(0xffFFFFFF)),)
+                        Text("www.etiantian.com", style: TextStyle(fontSize: 18, color: Color(0xffFFFFFF), fontWeight: FontWeight.w300),),
                       ],
                     ),
                   ),
                   Padding(padding: EdgeInsets.only(top: 20)),
-                  Text("网校满分课程", style: TextStyle(fontSize: 14, color: Color(0xff111111)),),
+                  Text("网校满分课程", style: TextStyle(fontSize: 21, color: Color(0xff111111), fontWeight: FontWeight.w300),),
                   Padding(padding: EdgeInsets.only(top: 5)),
-                  Text("满分卡用户", style: TextStyle(fontSize: 10, color: Color(0xff666666)),),
+                  Text("满分卡用户", style: TextStyle(fontSize: 18, color: Color(0xff666666)),),
                 ],
               ),
               onTap: (){
@@ -93,14 +93,14 @@ class _HomeState extends State<HomePage> {
                 }));
               },
             ),
-            Padding(padding: EdgeInsets.only(left: 17)),
+            Padding(padding: EdgeInsets.only(left: 40)),
             InkWell(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    width: 190,
-                    height: 240,
+                    width: 230,
+                    height: 290,
                     decoration: BoxDecoration(
                       color: Color(0xffFFB400),
                       borderRadius: BorderRadius.circular(10),
@@ -115,16 +115,16 @@ class _HomeState extends State<HomePage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Image.asset("images/zhiling_course_icon.png", width: 127, height: 127, fit: BoxFit.fill,),
+                        Image.asset("images/zhiling_course_icon.png", width: 160, height: 160, fit: BoxFit.fill,),
                         Padding(padding: EdgeInsets.only(top: 20)),
-                        Text("ai.etiantian.com", style: TextStyle(fontSize: 10, color: Color(0xffFFFFFF)),)
+                        Text("ai.etiantian.com", style: TextStyle(fontSize: 18, color: Color(0xffFFFFFF), fontWeight: FontWeight.w300),),
                       ],
                     ),
                   ),
                   Padding(padding: EdgeInsets.only(top: 20)),
-                  Text("网校智领课程", style: TextStyle(fontSize: 14, color: Color(0xff111111)),),
+                  Text("网校智领课程", style: TextStyle(fontSize: 21, color: Color(0xff111111), fontWeight: FontWeight.w300),),
                   Padding(padding: EdgeInsets.only(top: 5)),
-                  Text("智领、智学用户", style: TextStyle(fontSize: 10, color: Color(0xff666666)),),
+                  Text("智领、智学用户", style: TextStyle(fontSize: 18, color: Color(0xff666666)),),
                 ],
               ),
               onTap: (){
@@ -133,14 +133,14 @@ class _HomeState extends State<HomePage> {
                 }));
               },
             ),
-            Padding(padding: EdgeInsets.only(left: 17)),
+            Padding(padding: EdgeInsets.only(left: 40)),
             InkWell(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    width: 190,
-                    height: 240,
+                    width: 230,
+                    height: 290,
                     decoration: BoxDecoration(
                       color: Color(0xff33D775),
                       borderRadius: BorderRadius.circular(10),
@@ -155,16 +155,16 @@ class _HomeState extends State<HomePage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Image.asset("images/digital_school_icon.png", width: 127, height: 127, fit: BoxFit.fill,),
+                        Image.asset("images/digital_school_icon.png", width: 160, height: 160, fit: BoxFit.fill,),
                         Padding(padding: EdgeInsets.only(top: 20)),
-                        Text("school-web.etiantian.com", style: TextStyle(fontSize: 10, color: Color(0xffFFFFFF)),)
+                        Text("school-web.etiantian.com", style: TextStyle(fontSize: 18, color: Color(0xffFFFFFF), fontWeight: FontWeight.w300),),
                       ],
                     ),
                   ),
                   Padding(padding: EdgeInsets.only(top: 20)),
-                  Text("数字校园", style: TextStyle(fontSize: 14, color: Color(0xff111111)),),
+                  Text("数字校园", style: TextStyle(fontSize: 21, color: Color(0xff111111), fontWeight: FontWeight.w300),),
                   Padding(padding: EdgeInsets.only(top: 5)),
-                  Text("教学（爱学）平台用户", style: TextStyle(fontSize: 10, color: Color(0xff666666)),),
+                  Text("教学（爱学）平台用户", style: TextStyle(fontSize: 18, color: Color(0xff666666)),),
                 ],
               ),
               onTap: (){

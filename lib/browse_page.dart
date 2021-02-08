@@ -37,7 +37,7 @@ class _BrowseState extends State<BrowsePage> {
       minHeight: 5,
       backgroundColor: Colors.white70.withOpacity(0),
       value: progress == 1.0 ? 0 : progress,
-      valueColor: AlwaysStoppedAnimation<Color>(Colors.green),
+      valueColor: AlwaysStoppedAnimation<Color>(Colors.grey),
     );
   }
 

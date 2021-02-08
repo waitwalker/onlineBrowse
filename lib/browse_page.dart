@@ -194,7 +194,7 @@ class _BrowseState extends State<BrowsePage> {
               },
             ),
             Padding(padding: EdgeInsets.only(left: 50)),
-            Text(widget.title + " " + widget.initialUrl, style: TextStyle(fontSize: 15),),
+            Text(widget.title + " " + widget.initialUrl, style: TextStyle(fontSize: 17),),
           ],
         ),
       ),

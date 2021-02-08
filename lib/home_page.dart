@@ -89,7 +89,7 @@ class _HomeState extends State<HomePage> {
               ),
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context){
-                  return BrowsePage(initialUrl: "https://www.etiantian.com/", title: "网校满分课程",);
+                  return BrowsePage(initialUrl: "https://www.etiantian.com/login.html", title: "网校满分课程",);
                 }));
               },
             ),
@@ -169,7 +169,7 @@ class _HomeState extends State<HomePage> {
               ),
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context){
-                  return BrowsePage(initialUrl: "https://school-web.etiantian.com/", title: "数字校园",);
+                  return BrowsePage(initialUrl: "https://school-web.etiantian.com/elogin/#/", title: "数字校园",);
                 }));
               },
             ),

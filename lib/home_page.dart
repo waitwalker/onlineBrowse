@@ -114,7 +114,7 @@ class _HomeState extends State<HomePage> {
     String title = map["title"];
     String subTitle = map["subTitle"];
     String openedURL = map["openedURL"];
-    Color backg = map["background"];
+    Color backgroundColor = map["background"];
     Color shadow = map["shadow"];
     return InkWell(
       child: Column(
@@ -124,7 +124,7 @@ class _HomeState extends State<HomePage> {
             width: cardWidth,
             height: cardHeight,
             decoration: BoxDecoration(
-              color: backg,
+              color: backgroundColor,
               borderRadius: BorderRadius.circular(10),
               boxShadow: [
                 BoxShadow(

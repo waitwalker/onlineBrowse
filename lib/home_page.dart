@@ -46,10 +46,10 @@ class _HomeState extends State<HomePage> {
     },
     {
       "imageString" : "images/digital_school_icon.png",
-      "showedURL" : "school-web.etiantian.com",
+      "showedURL" : "school-web.ai-classes.com",
       "title" : "数字校园",
       "subTitle" : "教学（爱学）平台用户",
-      "openedURL" : "https://school-web.etiantian.com/elogin/#/",
+      "openedURL" : "https://school-web.ai-classes.com/elogin/#/",
       "background" : Color(0xff33D775),
       "shadow" : Color(0x9933D775),
     }
